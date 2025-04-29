@@ -1,5 +1,116 @@
 <!-- start custom head snippets -->
 
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+<!-- Fluxi CSS - Optimized -->
+<link rel="stylesheet" href="{{ '/assets/css/fluxi-optimized.css' | relative_url }}">
+
+<!-- Fluxi Services CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/fluxi-services.css' | relative_url }}">
+
+<!-- Service Feature Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/service-feature-fix.css' | relative_url }}">
+
+<!-- Contact Form CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/fluxi-contact.css' | relative_url }}">
+
+<!-- Feature Section CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/fluxi-feature.css' | relative_url }}">
+
+<!-- Footer Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/footer-fix.css' | relative_url }}">
+
+<!-- Navigation Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/nav-fix.css' | relative_url }}">
+
+<!-- Service Button Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/service-button-fix.css' | relative_url }}">
+
+<!-- Mobile Navigation Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/mobile-nav-fix.css' | relative_url }}">
+
+<!-- Masthead Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/masthead-fix.css' | relative_url }}">
+
+<!-- Title Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/title-fix.css' | relative_url }}">
+
+<!-- Page Title Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/page-title-fix.css' | relative_url }}">
+
+<!-- Mobile Title Fix CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/mobile-title-fix.css' | relative_url }}">
+
+<!-- Floating WhatsApp CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/floating-whatsapp.css' | relative_url }}">
+
+<!-- Inline CSS for critical mobile fixes -->
+<style>
+  @media (max-width: 991px) {
+    /* Critical masthead fixes */
+    .masthead {
+      display: block !important;
+      visibility: visible !important;
+      position: relative !important;
+    }
+    .masthead__inner-wrap {
+      display: flex !important;
+      visibility: visible !important;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    /* Critical fix for site title on mobile */
+    .site-logo a.site-title {
+      display: flex !important;
+      visibility: visible !important;
+      white-space: nowrap !important;
+      overflow: visible !important;
+      color: #000000 !important;
+    }
+
+    /* Critical fix for navigation on mobile */
+    .greedy-nav {
+      display: flex !important;
+      visibility: visible !important;
+      position: relative !important;
+      width: 100%;
+    }
+
+    /* Critical fix for hamburger button */
+    .greedy-nav__toggle {
+      display: block !important;
+      visibility: visible !important;
+      position: absolute !important;
+      top: -40px !important;
+      right: 15px !important;
+    }
+
+    /* Critical fix for hamburger button lines */
+    .greedy-nav__toggle .navicon,
+    .greedy-nav__toggle .navicon:before,
+    .greedy-nav__toggle .navicon:after {
+      background: #1d1c3d !important;
+      display: block !important;
+    }
+
+    /* Critical fix for mobile menu */
+    .greedy-nav .visible-links.visible-mobile {
+      display: flex !important;
+      visibility: visible !important;
+    }
+  }
+</style>
+
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->

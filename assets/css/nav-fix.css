@@ -1,0 +1,27 @@
+/* Navigation hover underline fix */
+.greedy-nav .visible-links a {
+  position: relative;
+}
+
+.greedy-nav .visible-links a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.greedy-nav .visible-links a:hover:after {
+  width: 20px;
+  opacity: 1;
+}
+
+/* Override the original underline */
+.greedy-nav .visible-links a:before {
+  display: none;
+}

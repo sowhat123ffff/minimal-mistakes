@@ -10,7 +10,6 @@
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
-    {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 
     <div class="initial-content">
@@ -30,6 +29,32 @@
         {% include_cached footer.html %}
       </footer>
     </div>
+
+    <!-- Floating WhatsApp Button with Popup -->
+    <div class="floating-whatsapp">
+      <!-- WhatsApp Button -->
+      <button id="floating-whatsapp-button" class="floating-whatsapp-button" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+
+      <!-- WhatsApp Popup -->
+      <div id="whatsapp-popup" class="whatsapp-popup">
+        <div class="whatsapp-popup-header">
+          <h4 class="whatsapp-popup-title">Chat with us</h4>
+          <button id="whatsapp-popup-close" class="whatsapp-popup-close" aria-label="Close popup">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <a id="whatsapp-popup-option" class="whatsapp-popup-option" href="#">
+          Build your website with us today!
+        </a>
+      </div>
+    </div>
+
+    <!-- Debug Info (will be hidden in production) -->
+    <script>
+      console.log('Default layout loaded');
+    </script>
 
     {% include scripts.html %}
   </body>

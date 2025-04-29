@@ -1,0 +1,220 @@
+/* Mobile Navigation Fix */
+/* Fix for masthead on mobile */
+.masthead {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.masthead__inner-wrap {
+  display: flex !important;
+  visibility: visible !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  display: block !important;
+  visibility: visible !important;
+  z-index: 1000;
+}
+
+.greedy-nav {
+  display: flex !important;
+  visibility: visible !important;
+  width: auto;
+  position: relative;
+  z-index: 1000;
+}
+
+@media (max-width: 991px) {
+  /* Mobile navigation container */
+  .greedy-nav {
+    width: 100%;
+    order: 3;
+    margin-top: 10px;
+  }
+
+  /* Mobile menu toggle button container */
+  .greedy-nav__toggle-wrapper {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  /* Mobile menu links */
+  .greedy-nav .visible-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    width: 100%;
+    visibility: visible !important;
+  }
+
+  /* Show mobile menu when active */
+  .greedy-nav .visible-links.visible-mobile {
+    display: flex !important;
+    visibility: visible !important;
+  }
+
+  /* Mobile menu items */
+  .greedy-nav .visible-links li {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: block;
+  }
+
+  .greedy-nav .visible-links li:last-child {
+    border-bottom: none;
+  }
+
+  /* Mobile menu links */
+  .greedy-nav .visible-links a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+  }
+
+  .greedy-nav__toggle {
+    display: block !important;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+    z-index: 9999;
+    visibility: visible !important;
+  }
+
+  .greedy-nav__toggle .navicon {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #1d1c3d;
+    transition: all 0.3s ease;
+    display: block !important;
+  }
+
+  .greedy-nav__toggle .navicon:before,
+  .greedy-nav__toggle .navicon:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #1d1c3d;
+    transition: all 0.3s ease;
+    display: block !important;
+  }
+
+  .greedy-nav__toggle .navicon:before {
+    top: -8px;
+  }
+
+  .greedy-nav__toggle .navicon:after {
+    bottom: -8px;
+  }
+
+  .greedy-nav__toggle.close .navicon {
+    background: transparent;
+  }
+
+  .greedy-nav__toggle.close .navicon:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .greedy-nav__toggle.close .navicon:after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  /* Additional mobile fixes */
+  .masthead {
+    position: relative !important;
+    padding: 15px 0;
+  }
+
+  .masthead__inner-wrap {
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 15px;
+  }
+
+  /* Logo container */
+  .site-logo {
+    max-width: 70%;
+    overflow: visible !important;
+    flex: 0 0 auto;
+  }
+
+  .site-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Site title */
+  .site-logo a.site-title {
+    display: flex !important;
+    visibility: visible !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    font-size: 1.4rem;
+  }
+
+  /* Position the hamburger menu button */
+  .greedy-nav__toggle {
+    position: absolute !important;
+    top: 50% !important;
+    right: 15px !important;
+    transform: translateY(-50%) !important;
+  }
+
+  /* Fix for the navigation toggle button to ensure it's visible */
+  .greedy-nav__toggle .navicon,
+  .greedy-nav__toggle .navicon:before,
+  .greedy-nav__toggle .navicon:after {
+    background: #1d1c3d !important;
+  }
+}
+
+/* Phone-specific styles */
+@media (max-width: 576px) {
+  .masthead {
+    padding: 10px 0;
+  }
+
+  .masthead__inner-wrap {
+    padding: 0 10px;
+  }
+
+  .site-logo {
+    max-width: 80%;
+  }
+
+  .site-logo a.site-title {
+    font-size: 1.2rem;
+  }
+
+  .greedy-nav__toggle {
+    width: 25px;
+    height: 25px;
+    right: 10px !important;
+  }
+
+  .greedy-nav .visible-links a {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}

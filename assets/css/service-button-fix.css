@@ -1,0 +1,25 @@
+/* Service card button font color fix */
+.service-card-button {
+  color: #ffffff !important;
+}
+
+.service-card:hover .service-card-button {
+  color: #5045e4 !important;
+}
+
+.service-card-featured .service-card-button {
+  color: #5045e4 !important;
+}
+
+.service-card-featured .service-card-button:hover {
+  color: #5045e4 !important;
+}
+
+/* Service feature link font color fix */
+.service-feature-link {
+  color: #5045e4 !important;
+}
+
+.service-feature-link:hover {
+  color: #3f35d0 !important;
+}

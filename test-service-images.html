@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div class="container mt-5">
+  <h1>Test Service Images</h1>
+  
+  <div class="row mt-5">
+    <div class="col-lg-6">
+      <div class="service-feature-image">
+        <img src="{{ '/assets/images/fluxi/service/01.jpg' | relative_url }}" alt="Service" class="img-fluid service-feature-img">
+      </div>
+    </div>
+    
+    <div class="col-lg-6">
+      <div class="service-feature-content">
+        <img src="{{ '/assets/images/fluxi/service/03.png' | relative_url }}" alt="Service" class="service-feature-icon">
+        <h3 class="service-feature-title">Sharing and cross promotion</h3>
+        <p class="service-feature-description">Includes using high-quality keywords to write strategic content that ranks, as well as descriptive metadata and meaningful image alt text.</p>
+        <a href="#" class="service-feature-link">Get more traffic</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-5 service-feature-row-reverse">
+    <div class="col-lg-6">
+      <div class="service-feature-content">
+        <img src="{{ '/assets/images/fluxi/service/07.png' | relative_url }}" alt="Service" class="service-feature-icon">
+        <h3 class="service-feature-title">Search Engine Optimization</h3>
+        <p class="service-feature-description">Includes all the links and ads from outside your website that point people to your website, like press releases, guest blogs, and paid search engine ads.</p>
+        <a href="#" class="service-feature-link">Get more traffic</a>
+      </div>
+    </div>
+    
+    <div class="col-lg-6">
+      <div class="service-feature-image">
+        <img src="{{ '/assets/images/fluxi/service/02.jpg' | relative_url }}" alt="Service" class="img-fluid service-feature-img">
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-5">
+    <div class="col-12">
+      <h2>Direct Image Tests</h2>
+      <p>Testing direct image loading without CSS classes:</p>
+    </div>
+  </div>
+  
+  <div class="row mt-3">
+    <div class="col-lg-6">
+      <img src="{{ '/assets/images/fluxi/service/01.jpg' | relative_url }}" alt="Service 1" class="img-fluid">
+      <p class="mt-2">Image 1: assets/images/fluxi/service/01.jpg</p>
+    </div>
+    
+    <div class="col-lg-6">
+      <img src="{{ '/assets/images/fluxi/service/02.jpg' | relative_url }}" alt="Service 2" class="img-fluid">
+      <p class="mt-2">Image 2: assets/images/fluxi/service/02.jpg</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Check if images loaded successfully
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.addEventListener('error', function() {
+        console.error('Failed to load image:', this.src);
+        this.style.display = 'none';
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'alert alert-danger mt-2';
+        errorMsg.textContent = 'Image failed to load: ' + this.src;
+        this.parentElement.appendChild(errorMsg);
+      });
+      
+      img.addEventListener('load', function() {
+        console.log('Image loaded successfully:', this.src);
+      });
+    });
+  });
+</script>

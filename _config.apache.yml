@@ -1,0 +1,18 @@
+# Apache-specific configuration
+# Use this file when building for Apache with:
+# bundle exec jekyll build --config _config.yml,_config.apache.yml
+
+# Set the base URL to match your Apache setup
+# For localhost/minimal-mistakes:
+baseurl: "/minimal-mistakes"
+
+# For a virtual host (minimal-mistakes.local):
+# baseurl: ""
+
+# Set the URL to your local development URL
+url: "http://localhost"
+# For a virtual host:
+# url: "http://minimal-mistakes.local"
+
+# Disable Jekyll's built-in server-specific features
+serving: false

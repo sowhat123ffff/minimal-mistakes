@@ -1,0 +1,32 @@
+/* Fix for service feature images */
+.service-feature-image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0; /* Fallback background color */
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  max-height: 100%;
+  display: block; /* Ensure the image is displayed as a block element */
+}
+
+/* Fix for service feature row reverse */
+.service-feature-row-reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 991px) {
+  .service-feature-row-reverse {
+    flex-direction: column-reverse;
+  }
+}
