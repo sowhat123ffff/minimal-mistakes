@@ -1,0 +1,47 @@
+/* Sticky Header Styles */
+.masthead {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 1px solid var(--border-color, #e9e9ef);
+}
+
+.masthead.scrolled {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add padding to body to prevent content from being hidden under the fixed header */
+body {
+  padding-top: 50px; /* Adjusted padding for header with larger logo */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  body {
+    padding-top: 45px; /* Smaller padding for mobile */
+  }
+
+  .masthead {
+    position: fixed !important;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 40px; /* Even smaller padding for small mobile devices */
+  }
+}
+
+/* Animation for header when scrolling up after scrolling down */
+.masthead.scroll-up {
+  transform: translateY(0);
+}
+
+.masthead.scroll-down {
+  transform: translateY(-100%);
+}

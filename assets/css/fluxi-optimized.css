@@ -236,7 +236,7 @@ img {
 /* ===== Header/Masthead ===== */
 .masthead {
   background-color: #ffffff;
-  padding: 5px 0;
+  padding: 2px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -255,7 +255,7 @@ img {
 }
 
 .site-logo img {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 
@@ -276,9 +276,9 @@ img {
 .greedy-nav a {
   color: var(--secondary-color);
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 5px 10px;
   position: relative;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .greedy-nav a:hover {

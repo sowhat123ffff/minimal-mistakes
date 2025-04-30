@@ -1,0 +1,11 @@
+/* Service Icon Fix CSS */
+
+/* Change the background color of service-icon-primary to light gray */
+.service-card-icon.service-icon-primary {
+  background-color: rgb(233, 233, 239) !important;
+}
+
+/* Ensure hover state still works properly */
+.service-card:hover .service-icon-primary {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}

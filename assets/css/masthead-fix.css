@@ -2,7 +2,6 @@
 .masthead {
   display: block !important;
   visibility: visible !important;
-  position: relative !important;
   z-index: 9999 !important;
 }
 
@@ -22,10 +21,6 @@
 }
 
 @media (max-width: 991px) {
-  .masthead {
-    position: relative !important;
-  }
-
   .masthead__inner-wrap {
     flex-wrap: wrap;
     padding: 10px 15px !important;

@@ -1,0 +1,20 @@
+/* Title Icon Size Fix */
+.title-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}
+
+/* Ensure proper alignment */
+.site-title {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .title-icon {
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+  }
+}

@@ -30,15 +30,7 @@
 <!-- Custom JavaScript for Fluxi Theme -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Sticky Header
-    const header = document.querySelector('.masthead');
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
+    // Sticky Header functionality moved to sticky-header.js
 
     // Floating Images Animation
     const floatingImages = document.querySelectorAll('.floating-image');
@@ -117,6 +109,12 @@
 
 <!-- WhatsApp Test JS (for debugging) -->
 <script src="{{ '/assets/js/whatsapp-test.js' | relative_url }}"></script>
+
+<!-- Maintenance Notification JS -->
+<script src="{{ '/assets/js/maintenance-notification.js' | relative_url }}"></script>
+
+<!-- Sticky Header JS -->
+<script src="{{ '/assets/js/sticky-header.js' | relative_url }}"></script>
 
 <!-- WhatsApp Direct Implementation - Disabled to prevent duplicate buttons -->
 <!-- <script src="{{ '/assets/js/whatsapp-direct.js' | relative_url }}"></script> -->
