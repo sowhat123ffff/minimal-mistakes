@@ -1,0 +1,27 @@
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="site-logo">
+      <a href="{{ '/' | relative_url }}" class="site-title">
+        <img src="{{ '/assets/images/ac-space-icon.svg' | relative_url }}" alt="" class="title-icon">
+        AC SPACE
+      </a>
+    </div>
+
+    <nav id="site-nav" class="greedy-nav">
+      <ul class="visible-links">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+        <li><a href="{{ '/case-studies/' | relative_url }}">Case Studies</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+
+      <button class="greedy-nav__toggle" type="button">
+        <span class="visually-hidden">Toggle menu</span>
+        <div class="navicon"></div>
+      </button>
+      <ul class="hidden-links hidden"></ul>
+    </nav>
+  </div>
+</div>

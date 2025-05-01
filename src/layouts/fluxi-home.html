@@ -1,0 +1,568 @@
+---
+layout: default
+---
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero-content">
+          <h1 class="hero-title">{{ page.hero_title | default: "Make your<br>SEO Comaign<br>Successful." }}</h1>
+          <p class="hero-description">{{ page.hero_description | default: "Get organic traffic and high rankings with multi-team collaboration that will help you optimize on-page and off-page SEO." }}</p>
+
+          <div class="hero-buttons">
+            {% if page.hero_btn_primary_url %}
+              <a href="{{ page.hero_btn_primary_url | relative_url }}" class="btn btn--primary">{{ page.hero_btn_primary_label | default: "Start 14-day Free Trial" }}</a>
+            {% endif %}
+          </div>
+
+          <div class="hero-reviews">
+            <div class="hero-avatars">
+              <img src="{{ '/assets/images/fluxi/testimonials/avatars/01.png' | relative_url }}" alt="User">
+              <img src="{{ '/assets/images/fluxi/testimonials/avatars/02.png' | relative_url }}" alt="User">
+              <img src="{{ '/assets/images/fluxi/testimonials/avatars/03.png' | relative_url }}" alt="User">
+              <img src="{{ '/assets/images/fluxi/testimonials/avatars/07.png' | relative_url }}" alt="User">
+            </div>
+            <p class="hero-reviews-text">Based on 40M reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="hero-image">
+          <img src="{{ '/assets/images/fluxi/banner/01.png' | relative_url }}" alt="SEO Marketing">
+
+          <div class="hero-floating-images">
+            <img src="{{ '/assets/images/fluxi/banner/short/01.png' | relative_url }}" alt="" class="floating-image floating-image-1">
+            <img src="{{ '/assets/images/fluxi/banner/short/02.png' | relative_url }}" alt="" class="floating-image floating-image-2">
+            <img src="{{ '/assets/images/fluxi/banner/short/03.png' | relative_url }}" alt="" class="floating-image floating-image-3">
+            <img src="{{ '/assets/images/fluxi/banner/short/04.png' | relative_url }}" alt="" class="floating-image floating-image-4">
+            <img src="{{ '/assets/images/fluxi/banner/short/05.png' | relative_url }}" alt="" class="floating-image floating-image-5">
+            <img src="{{ '/assets/images/fluxi/banner/short/06.png' | relative_url }}" alt="" class="floating-image floating-image-6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trusted Companies Section -->
+<section class="trusted-companies-section">
+  <div class="container">
+    <div class="trusted-companies-header">
+      <h2 class="trusted-companies-title">Trusted by<br>Top Companies</h2>
+    </div>
+
+    <div class="trusted-companies-logos">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="trusted-logos-slider">
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/01.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/02.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/03.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/04.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/05.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/21.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/22.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/23.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/24.svg' | relative_url }}" alt="Brand"></a>
+            <a href="#" class="trusted-logo-item"><img src="{{ '/assets/images/fluxi/brand/21.svg' | relative_url }}" alt="Brand"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+  <div class="container">
+    <div class="services-header">
+      <h6 class="services-subtitle">Our main services</h6>
+      <h2 class="services-title">Our solutions that help<br>you grow up</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-card-icon service-icon-light">
+            <img src="{{ '/assets/images/fluxi/services/icon-clock.svg' | relative_url }}" alt="Engaging Content">
+          </div>
+          <h6 class="service-card-subtitle">Engaging Content</h6>
+          <p class="service-card-description">Get organic traffic and high rankings with multi-team collaboration that will help you optimize on-page and off-page SEO.</p>
+
+          <ul class="service-card-features">
+            <li><span class="feature-check"></span>Best keyword strategy</li>
+            <li><span class="feature-check"></span>Competitors analysis & reports</li>
+            <li><span class="feature-check"></span>technical site audit checklist</li>
+          </ul>
+
+          <a href="{{ '/service-single.html' | relative_url }}" class="service-card-button">Get started</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-card-icon service-icon-primary">
+            <img src="{{ '/assets/images/fluxi/services/icon-diamond.svg' | relative_url }}" alt="SEO Services">
+          </div>
+          <h6 class="service-card-subtitle">SEO Services</h6>
+          <p class="service-card-description">Get organic traffic and high rankings with multi-team collaboration that will help you optimize on-page and off-page SEO.</p>
+
+          <ul class="service-card-features">
+            <li><span class="feature-check"></span>Best keyword strategy</li>
+            <li><span class="feature-check"></span>Competitors analysis & reports</li>
+            <li><span class="feature-check"></span>technical site audit checklist</li>
+          </ul>
+
+          <a href="{{ '/service-single.html' | relative_url }}" class="service-card-button">Get started</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="service-card">
+          <div class="service-card-icon service-icon-light">
+            <img src="{{ '/assets/images/fluxi/services/icon-chart.svg' | relative_url }}" alt="Boost Google Search">
+          </div>
+          <h6 class="service-card-subtitle">Boost Google Search</h6>
+          <p class="service-card-description">Get organic traffic and high rankings with multi-team collaboration that will help you optimize on-page and off-page SEO.</p>
+
+          <ul class="service-card-features">
+            <li><span class="feature-check"></span>Best keyword strategy</li>
+            <li><span class="feature-check"></span>Competitors analysis & reports</li>
+            <li><span class="feature-check"></span>technical site audit checklist</li>
+          </ul>
+
+          <a href="{{ '/service-single.html' | relative_url }}" class="service-card-button">Get started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Shapes -->
+  <div class="service-shape-circle service-shape-circle-1"></div>
+  <div class="service-shape-circle service-shape-circle-2"></div>
+</section>
+
+<!-- Service Features Section -->
+<section class="service-features-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="service-feature-image">
+          <img src="{{ '/assets/images/fluxi/service/01.jpg' | relative_url }}" alt="Service" class="img-fluid service-feature-img">
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="service-feature-content">
+          <img src="{{ '/assets/images/fluxi/service/03.png' | relative_url }}" alt="Service" class="service-feature-icon">
+          <h3 class="service-feature-title">Sharing and cross<br>promotion</h3>
+          <p class="service-feature-description">Includes using high-quality keywords to write strategic content that ranks, as well as descriptive metadata and meaningful image alt text.</p>
+          <a href="{{ '/service-single.html' | relative_url }}" class="service-feature-link">Get more traffic</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row service-feature-row-reverse">
+      <div class="col-lg-6">
+        <div class="service-feature-content">
+          <img src="{{ '/assets/images/fluxi/service/07.png' | relative_url }}" alt="Service" class="service-feature-icon">
+          <h3 class="service-feature-title">Search Engine<br>Optimization</h3>
+          <p class="service-feature-description">Includes all the links and ads from outside your website that point people to your website, like press releases, guest blogs, and paid search engine ads.</p>
+          <a href="{{ '/service-single.html' | relative_url }}" class="service-feature-link">Get more traffic</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="service-feature-image">
+          <img src="{{ '/assets/images/fluxi/service/02.jpg' | relative_url }}" alt="Service" class="img-fluid service-feature-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Shapes -->
+  <img src="{{ '/assets/images/fluxi/service/shape/01.png' | relative_url }}" alt="Shape" class="service-shape service-shape-1">
+  <img src="{{ '/assets/images/fluxi/service/shape/02.png' | relative_url }}" alt="Shape" class="service-shape service-shape-2">
+  <img src="{{ '/assets/images/fluxi/service/shape/03.png' | relative_url }}" alt="Shape" class="service-shape service-shape-3">
+  <img src="{{ '/assets/images/fluxi/service/shape/04.png' | relative_url }}" alt="Shape" class="service-shape service-shape-4">
+  <img src="{{ '/assets/images/fluxi/service/shape/05.png' | relative_url }}" alt="Shape" class="service-shape service-shape-5">
+  <img src="{{ '/assets/images/fluxi/service/shape/06.png' | relative_url }}" alt="Shape" class="service-shape service-shape-6">
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+  <div class="container">
+    <div class="about-header">
+      <h6 class="about-subtitle">A little about us</h6>
+      <h2 class="about-title">Unleashing the power of<br>SEO tactics</h2>
+    </div>
+
+    <div class="about-features">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="about-feature-item">
+            <h6 class="about-feature-number">01</h6>
+            <h3 class="about-feature-title">Creating a strategy</h3>
+            <p class="about-feature-description">Optimizing your website for each of the main components to put a good and fit in house strategy in place.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="about-feature-item">
+            <h6 class="about-feature-number">02</h6>
+            <h3 class="about-feature-title">Building your site</h3>
+            <p class="about-feature-description">Optimizing your website for each of the main components to put a good and fit in house strategy in place.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="about-feature-item">
+            <h6 class="about-feature-number">03</h6>
+            <h3 class="about-feature-title">Promoting your site</h3>
+            <p class="about-feature-description">Optimizing your website for each of the main components to put a good and fit in house strategy in place.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="about-description">AC SPACE focus on helping you to make useful content more accessible with an ultimate goal for a good sharing profit as a content creator. We see more and more ads in search results and not enough care for the people who are actually creating content.</p>
+    </div>
+
+    <div class="about-counters">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="about-counter">
+            <h3 class="about-counter-number">2.5B</h3>
+            <p class="about-counter-text">Related keywords</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="about-counter">
+            <h3 class="about-counter-number">100M</h3>
+            <p class="about-counter-text">Competitors keywords</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="about-counter">
+            <h3 class="about-counter-number">48k</h3>
+            <p class="about-counter-text">Supported locations</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="about-counter">
+            <h3 class="about-counter-number">2004</h3>
+            <p class="about-counter-text">Year founded</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Shapes -->
+  <img src="{{ '/assets/images/fluxi/about/shape/01.png' | relative_url }}" alt="Shape" class="about-shape about-shape-1">
+  <img src="{{ '/assets/images/fluxi/about/shape/02.png' | relative_url }}" alt="Shape" class="about-shape about-shape-2">
+  <img src="{{ '/assets/images/fluxi/about/shape/03.png' | relative_url }}" alt="Shape" class="about-shape about-shape-3">
+  <img src="{{ '/assets/images/fluxi/about/shape/04.png' | relative_url }}" alt="Shape" class="about-shape about-shape-4">
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="testimonials-header">
+      <h6 class="testimonials-subtitle">Testimonials</h6>
+      <h2 class="testimonials-title">Discover how businesses<br>likes our strategies.</h2>
+    </div>
+
+    <div class="testimonials-slider">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-card">
+            <img src="{{ '/assets/images/fluxi/testimonials/logo/quote.png' | relative_url }}" alt="Quote" class="testimonial-quote">
+
+            <div class="testimonial-logos">
+              <img src="{{ '/assets/images/fluxi/testimonials/logo/01.svg' | relative_url }}" alt="Company" class="testimonial-logo">
+              <img src="{{ '/assets/images/fluxi/testimonials/logo/21.svg' | relative_url }}" alt="Company" class="testimonial-logo-dark">
+            </div>
+
+            <p class="testimonial-content">"I don't see anyone else in this space providing the level of insight brings to the table. They understand data beyond the vanity metrics often provided – true impactful results."</p>
+
+            <div class="testimonial-author">
+              <a href="#" class="testimonial-author-image">
+                <img src="{{ '/assets/images/fluxi/testimonials/avatars/01.png' | relative_url }}" alt="Author">
+              </a>
+              <div class="testimonial-author-info">
+                <h6 class="testimonial-author-name">Keaton Stancato</h6>
+                <p class="testimonial-author-position">Founder/CEO at AC SPACE Digital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="testimonial-card">
+            <img src="{{ '/assets/images/fluxi/testimonials/logo/quote.png' | relative_url }}" alt="Quote" class="testimonial-quote">
+
+            <div class="testimonial-logos">
+              <img src="{{ '/assets/images/fluxi/testimonials/logo/02.svg' | relative_url }}" alt="Company" class="testimonial-logo">
+              <img src="{{ '/assets/images/fluxi/testimonials/logo/22.svg' | relative_url }}" alt="Company" class="testimonial-logo-dark">
+            </div>
+
+            <p class="testimonial-content">By using AC SPACE, we've gotten so much of our time back that we're now able to put towards things that are actually helping our company as opposed to just throwing content out there.</p>
+
+            <div class="testimonial-author">
+              <a href="#" class="testimonial-author-image">
+                <img src="{{ '/assets/images/fluxi/testimonials/avatars/02.png' | relative_url }}" alt="Author">
+              </a>
+              <div class="testimonial-author-info">
+                <h6 class="testimonial-author-name">Kevin Smith</h6>
+                <p class="testimonial-author-position">Creative and Identity Partner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="testimonial-card">
+            <img src="{{ '/assets/images/fluxi/testimonials/logo/quote.png' | relative_url }}" alt="Quote" class="testimonial-quote">
+
+            <div class="testimonial-logos">
+              <img src="{{ '/assets/images/fluxi/testimonials/logo/03.svg' | relative_url }}" alt="Company" class="testimonial-logo">
+              <img src="{{ '/assets/images/fluxi/testimonials/logo/23.svg' | relative_url }}" alt="Company" class="testimonial-logo-dark">
+            </div>
+
+            <p class="testimonial-content">"I don't see anyone else in this space providing the level of insight brings to the table. They understand data beyond the vanity metrics often provided – true impactful results."</p>
+
+            <div class="testimonial-author">
+              <a href="#" class="testimonial-author-image">
+                <img src="{{ '/assets/images/fluxi/testimonials/avatars/03.png' | relative_url }}" alt="Author">
+              </a>
+              <div class="testimonial-author-info">
+                <h6 class="testimonial-author-name">Dane Whitney</h6>
+                <p class="testimonial-author-position">Merchandising Market Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Shapes -->
+  <img src="{{ '/assets/images/fluxi/testimonials/shape/01.png' | relative_url }}" alt="Shape" class="testimonial-shape testimonial-shape-1">
+  <img src="{{ '/assets/images/fluxi/testimonials/shape/02.png' | relative_url }}" alt="Shape" class="testimonial-shape testimonial-shape-2">
+</section>
+
+<!-- Feature Sections -->
+<section class="feature-section">
+  <div class="container">
+    <div class="feature-header">
+      <div class="feature-subtitle">Feature</div>
+      <h2 class="feature-title">Essential Features</h2>
+      <p class="feature-description">"Empower your website with our standout template features, designed to elevate your online presence and deliver an exceptional user experience.</p>
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="feature-grid">
+      <div class="row" style="--bs-gutter-x: 1.0rem; --bs-gutter-y: 1.0rem;">
+        <!-- Row 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10H30V12H10V10ZM10 14H30V16H10V14ZM10 18H30V20H10V18ZM10 22H20V24H10V22Z" fill="#5045E4"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">08 Homepages</h4>
+            <p class="feature-item-description">Easy to customize and coordinate between layouts, elements, widgets and blocks, as you will find great flexibility while working with AC SPACE.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10H10C8.895 10 8 10.895 8 12V28C8 29.105 8.895 30 10 30H30C31.105 30 32 29.105 32 28V12C32 10.895 31.105 10 30 10ZM30 28H10V12H30V28Z" fill="#5045E4"/>
+                <path d="M14 18H26V20H14V18ZM14 22H26V24H14V22ZM14 14H26V16H14V14Z" fill="#5045E4"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">30+ Innerpages</h4>
+            <p class="feature-item-description">Easy to customize and coordinate between layouts, elements, widgets and blocks, as you will find great flexibility while working with AC SPACE.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10H10C8.895 10 8 10.895 8 12V28C8 29.105 8.895 30 10 30H30C31.105 30 32 29.105 32 28V12C32 10.895 31.105 10 30 10ZM30 28H10V12H30V28Z" fill="#5045E4"/>
+                <path d="M26 14H14C13.448 14 13 14.448 13 15V25C13 25.552 13.448 26 14 26H26C26.552 26 27 25.552 27 25V15C27 14.448 26.552 14 26 14ZM25 24H15V16H25V24Z" fill="#5045E4"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Fully Responsive</h4>
+            <p class="feature-item-description">The best thing about Stelary is responsiveness, as we relied on the mobile-first system for a great user experience across various devices.</p>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10L20 20L30 10M10 30L20 20L30 30" fill="none" stroke="#5045E4" stroke-width="2"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Built With SCSS</h4>
+            <p class="feature-item-description">Easy to customize and coordinate between layouts, elements, widgets and blocks, as you will find great flexibility while working with AC SPACE.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="12" stroke="#5045E4" stroke-width="2" fill="none"/>
+                <path d="M20 14V20L24 24" stroke="#5045E4" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Modern Swiper Slider</h4>
+            <p class="feature-item-description">Easy to customize and coordinate between layouts, elements, widgets and blocks, as you will find great flexibility while working with AC SPACE.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10H10C8.895 10 8 10.895 8 12V28C8 29.105 8.895 30 10 30H30C31.105 30 32 29.105 32 28V12C32 10.895 31.105 10 30 10ZM30 28H10V12H30V28Z" fill="#5045E4"/>
+                <path d="M14 18H26V20H14V18ZM14 22H26V24H14V22ZM14 14H26V16H14V14Z" fill="#5045E4"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Bootstrap v5.2</h4>
+            <p class="feature-item-description">Based on the components of Bootstrap we have created our exclusive components are made to empower your next project</p>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10L30 30M30 10L10 30" stroke="#8C7AE6" stroke-width="2"/>
+                <path d="M15 20H25" stroke="#8C7AE6" stroke-width="2"/>
+                <path d="M20 15V25" stroke="#8C7AE6" stroke-width="2"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Clean Coded</h4>
+            <p class="feature-item-description">Based on the components of Bootstrap we have created our exclusive components are made to empower your next project</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="12" fill="none" stroke="#5045E4" stroke-width="2"/>
+                <path d="M20 14V26" stroke="#5045E4" stroke-width="2"/>
+                <path d="M14 20H26" stroke="#5045E4" stroke-width="2"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Google Font</h4>
+            <p class="feature-item-description">Based on the components of Bootstrap we have created our exclusive components are made to empower your next project</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10H10C8.895 10 8 10.895 8 12V28C8 29.105 8.895 30 10 30H30C31.105 30 32 29.105 32 28V12C32 10.895 31.105 10 30 10ZM30 28H10V12H30V28Z" fill="#5045E4"/>
+                <path d="M14 18H26V20H14V18ZM14 22H22V24H14V22ZM14 14H26V16H14V14Z" fill="#5045E4"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Easy Customization</h4>
+            <p class="feature-item-description">Easy to customize and coordinate between layouts, elements, widgets and blocks, as you will find great flexibility while working with AC SPACE.</p>
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="10" width="20" height="6" rx="1" fill="#5045E4"/>
+                <rect x="10" y="18" width="20" height="12" rx="1" fill="none" stroke="#5045E4" stroke-width="2"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Sticky Headers & Sidebars</h4>
+            <p class="feature-item-description">Building the site map with places to house in mind means implementing your SEO landing pages.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 10L10 15L20 20L30 15L20 10Z" fill="#5045E4"/>
+                <path d="M10 25L20 30L30 25" stroke="#5045E4" stroke-width="2"/>
+                <path d="M10 20L20 25L30 20" stroke="#5045E4" stroke-width="2"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">SEO Optimized</h4>
+            <p class="feature-item-description">Building the site map with places to house in mind means implementing your SEO landing pages.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 10V30" stroke="#5045E4" stroke-width="2"/>
+                <path d="M10 20H30" stroke="#5045E4" stroke-width="2"/>
+                <circle cx="20" cy="20" r="10" stroke="#5045E4" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <h4 class="feature-item-title">Regular Updates</h4>
+            <p class="feature-item-description">When selecting a theme for your website, make sure that your theme will stay up-to-date and won't be abandoned.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="subscription-section">
+  <div class="container">
+    <div class="subscription-content">
+      <h2 class="subscription-title">Contact Us</h2>
+      <p class="subscription-description">Need help? Chat with us directly on WhatsApp. We're ready to assist you!</p>
+
+      <div class="subscription-form contact-form">
+        <div class="form-field-wrapper whatsapp-button-wrapper">
+          <a href="https://wa.me/60164390224" id="whatsapp-button" class="subscription-button whatsapp-button">
+            <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="subscription-info">
+        <p>Click the button above to start a conversation with our support team.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Decorative Shapes -->
+  <img src="{{ '/assets/images/fluxi/subscribtion/shape/01.png' | relative_url }}" alt="Shape" class="subscription-shape subscription-shape-1">
+  <img src="{{ '/assets/images/fluxi/subscribtion/shape/02.png' | relative_url }}" alt="Shape" class="subscription-shape subscription-shape-2">
+  <img src="{{ '/assets/images/fluxi/subscribtion/shape/03.png' | relative_url }}" alt="Shape" class="subscription-shape subscription-shape-3">
+  <img src="{{ '/assets/images/fluxi/subscribtion/shape/04.png' | relative_url }}" alt="Shape" class="subscription-shape subscription-shape-4">
+</section>
+
+{{ content }}

@@ -22,8 +22,8 @@ title_separator          : "|"
 subtitle                 : "Professional Digital Marketing Solutions"
 name                     : "AC SPACE Digital"
 description              : "Professional SEO and digital marketing services to help your business grow online. We offer SEO, social media marketing, content marketing, and more."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://acspace.site" # the base hostname & protocol for your site
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/fluxi-logo.png" # path of logo image to display in the masthead
@@ -82,61 +82,66 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
-bing_site_verification   :
+google_site_verification : # Add your Google verification code here when available
+bing_site_verification   : # Add your Bing verification code here when available
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : acspacedigital
 facebook:
-  username               :
+  username               : acspacedigital
   app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  publisher              : acspacedigital
+og_image                 : /assets/images/fluxi/banner/01.png # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Organization # Person or Organization (defaults to Person)
+  name                   : AC SPACE Digital # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - https://twitter.com/acspacedigital
+    - https://facebook.com/acspacedigital
+    - https://linkedin.com/company/acspacedigital
+    - https://instagram.com/acspacedigital
+    - https://youtube.com/acspacedigital
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : # Add your Google Analytics tracking ID here when available
+    anonymize_ip         : true # true, false (default)
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "AC SPACE Digital"
+  avatar           : "/assets/images/ac-space-icon.svg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Professional SEO and digital marketing services to help your business grow online."
+  location         : "Malaysia"
+  email            : "contact@acspace.site"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:contact@acspace.site"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://acspace.site/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/acspacedigital"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://facebook.com/acspacedigital"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/company/acspacedigital"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/acspacedigital"
 
 # Site Footer
 footer:

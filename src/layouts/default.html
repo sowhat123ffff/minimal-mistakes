@@ -1,0 +1,77 @@
+---
+---
+
+<!doctype html>
+{% include copyright.html %}
+<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
+    {% include_cached masthead.html %}
+
+    <div class="initial-content">
+      {{ content }}
+      {% include after-content.html %}
+    </div>
+
+    {% if site.search == true %}
+      <div class="search-content">
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+
+    <!-- Floating WhatsApp Button with Popup -->
+    <div class="floating-whatsapp">
+      <!-- WhatsApp Button -->
+      <button id="floating-whatsapp-button" class="floating-whatsapp-button" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+
+      <!-- WhatsApp Popup -->
+      <div id="whatsapp-popup" class="whatsapp-popup">
+        <div class="whatsapp-popup-header">
+          <h4 class="whatsapp-popup-title">Chat with us</h4>
+          <button id="whatsapp-popup-close" class="whatsapp-popup-close" aria-label="Close popup">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <a id="whatsapp-popup-option" class="whatsapp-popup-option" href="#">
+          Build your website with us today!
+        </a>
+      </div>
+    </div>
+
+    <!-- Maintenance Notification Popup -->
+    <div id="maintenance-popup" class="maintenance-popup">
+      <div class="maintenance-popup-header">
+        <h4 class="maintenance-popup-title">Page Under Maintenance</h4>
+        <button id="maintenance-popup-close" class="maintenance-popup-close" aria-label="Close popup">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="maintenance-popup-content">
+        <div class="maintenance-popup-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <p>We're currently working on improving this page. Please check back later.</p>
+      </div>
+    </div>
+
+    <!-- Debug Info (will be hidden in production) -->
+    <script>
+      console.log('Default layout loaded');
+    </script>
+
+    {% include scripts.html %}
+  </body>
+</html>

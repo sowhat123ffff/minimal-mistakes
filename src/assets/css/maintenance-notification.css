@@ -1,0 +1,74 @@
+/* Maintenance Notification Styles */
+.maintenance-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-40%) translateX(-50%);
+  width: 320px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  display: none; /* Hidden by default */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  z-index: 9999;
+  text-align: center;
+}
+
+.maintenance-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.maintenance-popup-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1c3d;
+  margin: 0;
+}
+
+.maintenance-popup-close {
+  background: none;
+  border: none;
+  color: #6e6e8a;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.maintenance-popup-close:hover {
+  color: #1d1c3d;
+}
+
+.maintenance-popup-content {
+  margin-bottom: 20px;
+  color: #6e6e8a;
+  line-height: 1.6;
+}
+
+.maintenance-popup-icon {
+  font-size: 48px;
+  color: #5045e4;
+  margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .maintenance-popup {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .maintenance-popup-title {
+    font-size: 16px;
+  }
+
+  .maintenance-popup-icon {
+    font-size: 40px;
+  }
+}

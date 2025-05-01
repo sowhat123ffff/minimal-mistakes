@@ -1,0 +1,12 @@
+# Nginx-specific configuration
+# Use this when building for Nginx with:
+# bundle exec jekyll build --config _config.yml,_config.nginx.yml
+
+# Set the base URL to match your Nginx setup
+baseurl: "/website/minimal-mistakes"
+
+# Set the URL to your production URL
+url: "https://nothingshop.site"
+
+# Disable Jekyll's built-in server-specific features
+serving: false

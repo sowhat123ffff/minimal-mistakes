@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Diamond Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#5045e4" cx="12" cy="12" r="12"></circle>
+        <path d="M11.9998,4 L19.0711,11.0711 L12,18.1421 L4.92893,11.0711 L11.9998,4 Z M12,6.82843 L6.34315,12.4853 L12,18.1421 L17.6569,12.4853 L12,6.82843 Z M12,9.65685 L14.8284,12.4853 L12,15.3137 L9.17157,12.4853 L12,9.65685 Z" fill="white" fill-rule="nonzero"></path>
+    </g>
+</svg>

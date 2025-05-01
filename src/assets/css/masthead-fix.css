@@ -1,0 +1,54 @@
+/* Masthead visibility fix */
+.masthead {
+  display: block !important;
+  visibility: visible !important;
+  z-index: 9999 !important;
+}
+
+.masthead__inner-wrap {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+.site-logo {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.greedy-nav {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+@media (max-width: 991px) {
+  .masthead__inner-wrap {
+    flex-wrap: wrap;
+    padding: 10px 15px !important;
+  }
+
+  .site-logo {
+    max-width: 70%;
+    overflow: visible !important;
+  }
+
+  .site-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .site-logo a.site-title {
+    display: flex !important;
+    visibility: visible !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+  }
+
+  .greedy-nav {
+    position: relative;
+  }
+
+  .greedy-nav__toggle {
+    position: relative;
+    z-index: 9999;
+  }
+}

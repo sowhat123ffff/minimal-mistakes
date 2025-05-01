@@ -1,0 +1,47 @@
+/* Mobile Title Fix CSS */
+
+/* Ensure site title is visible on mobile */
+@media (max-width: 767px) {
+  .site-title {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Ensure the title text is visible */
+  .site-logo a.site-title {
+    display: flex !important;
+    visibility: visible !important;
+    align-items: center;
+    width: auto;
+  }
+
+  /* Adjust icon size for better proportions on mobile */
+  .title-icon {
+    height: 28px;
+    width: 28px;
+    margin-right: 8px;
+  }
+
+  /* Ensure the site logo container doesn't overflow */
+  .site-logo {
+    overflow: visible;
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 575px) {
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  .title-icon {
+    height: 26px;
+    width: 26px;
+    margin-right: 6px;
+  }
+}
